@@ -11,7 +11,6 @@ export const supabase = createClient(supabaseUrl, supabaseKey, {
   }
 })
 
-// Ensure anonymous auth
 export async function ensureAnonymousAuth() {
   const { data: { session } } = await supabase.auth.getSession()
   
