@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true
-  }
+  // Remove output: 'export' - this was breaking everything
 }
 
 module.exports = nextConfig
