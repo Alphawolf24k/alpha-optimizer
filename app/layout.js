@@ -6,11 +6,10 @@ export default function RootLayout({ children }) {
   const [showMobilePopup, setShowMobilePopup] = useState(false)
 
   useEffect(() => {
-    // Check if mobile - NO localStorage check, show every time
+    // Check if mobile
     const isMobile = window.innerWidth <= 768
     
     if (isMobile) {
-      // Show popup after 1 second on every page load
       const timer = setTimeout(() => {
         setShowMobilePopup(true)
       }, 1000)
@@ -49,6 +48,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Boost your gaming performance with Alpha Optimizer. 25+ custom crosshairs, DNS accelerator, real-time ping monitor, and more. Built by Muhammad Nabeel." />
         <meta name="keywords" content="CODM optimizer, Free Fire crosshair, ping stabilizer, gaming booster, mobile gaming" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
+        {/* Adsterra Social Bar Ad */}
+        <script src="https://pl31145023.profitableratecpmnetwork.com/6b/22/6a/6b226a8b814d7a70e4c4227424e4ac76.js"></script>
       </head>
       <body>
         <div className="particles">
@@ -68,7 +70,7 @@ export default function RootLayout({ children }) {
         </div>
         {children}
 
-        {/* Mobile Recommendation Popup - Shows EVERY TIME */}
+        {/* Mobile Recommendation Popup */}
         {showMobilePopup && (
           <div style={{
             position: 'fixed',
@@ -102,7 +104,6 @@ export default function RootLayout({ children }) {
                 }
               `}} />
 
-              {/* Close Button */}
               <button
                 onClick={dismissMobilePopup}
                 style={{
@@ -121,12 +122,10 @@ export default function RootLayout({ children }) {
                 ✕
               </button>
 
-              {/* Icon */}
               <div style={{ fontSize: '50px', marginBottom: '15px' }}>
                 💻
               </div>
 
-              {/* Title */}
               <h3 style={{
                 color: '#FFD700',
                 fontFamily: 'Gothic, cursive',
@@ -138,7 +137,6 @@ export default function RootLayout({ children }) {
                 𝕽𝖊𝖈𝖔𝖒𝖒𝖊𝖓𝖉𝖆𝖙𝖎𝖔𝖓
               </h3>
 
-              {/* Message */}
               <p style={{
                 color: '#D4A5E8',
                 fontSize: '14px',
@@ -148,7 +146,6 @@ export default function RootLayout({ children }) {
                 We recommend you to open this website on <strong style={{ color: '#FFD700' }}>PC/Laptop</strong> for better and smooth use.
               </p>
 
-              {/* Continue Button */}
               <button
                 onClick={dismissMobilePopup}
                 style={{
@@ -166,7 +163,6 @@ export default function RootLayout({ children }) {
                 Continue on Mobile
               </button>
 
-              {/* Small note */}
               <p style={{
                 color: '#64748b',
                 fontSize: '11px',

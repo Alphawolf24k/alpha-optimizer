@@ -38,6 +38,12 @@ export default function Home() {
           </div>
         </div>
 
+        {/* NATIVE BANNER AD */}
+        <div style={{ maxWidth: '728px', margin: '20px auto', textAlign: 'center' }}>
+          <script async="async" data-cfasync="false" src="https://pl31145022.profitableratecpmnetwork.com/05ab93c0ff8da94cb58d01406fb08378/invoke.js"></script>
+          <div id="container-05ab93c0ff8da94cb58d01406fb08378"></div>
+        </div>
+
         <div className="grid">
           <div className="card">
             <h2>🎯 25 Custom Crosshairs</h2>
@@ -69,7 +75,13 @@ export default function Home() {
         <QuizSystem />
         <Store />
 
-        {/* ALPHA OF ALPHAS - STATIC GOTHIC (NO ANIMATION) */}
+        {/* NATIVE BANNER AD - BOTTOM */}
+        <div style={{ maxWidth: '728px', margin: '20px auto', textAlign: 'center' }}>
+          <script async="async" data-cfasync="false" src="https://pl31145022.profitableratecpmnetwork.com/05ab93c0ff8da94cb58d01406fb08378/invoke.js"></script>
+          <div id="container-05ab93c0ff8da94cb58d01406fb08378"></div>
+        </div>
+
+        {/* ALPHA OF ALPHAS - STATIC GOTHIC */}
         <div style={{ 
           textAlign: 'center', 
           padding: '60px 20px',
@@ -83,7 +95,6 @@ export default function Home() {
             Built by <span className="glow-text">Muhammad Nabeel</span>
           </h2>
           
-          {/* Static Gothic Alpha of Alphas - No Animation */}
           <div style={{
             display: 'flex',
             alignItems: 'center',
@@ -102,7 +113,6 @@ export default function Home() {
             </span>
           </div>
           
-          {/* Subtitle - UNCHANGED */}
           <p style={{ color: '#FFD700', fontSize: '14px', fontStyle: 'italic', marginBottom: '20px', textShadow: '0 0 10px rgba(255, 215, 0, 0.5)' }}>
             ~ 𝕿𝖍𝖊 𝕯𝖆𝖗𝖐 𝕶𝖓𝖎𝖌𝖍𝖙 𝖔𝖋 𝕲𝖆𝖒𝖎𝖓𝖌 ~
           </p>
